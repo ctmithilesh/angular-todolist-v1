@@ -1,0 +1,19 @@
+<app-navigation></app-navigation>
+<div class="container m-3">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Todo Title </th>
+        <th scope="col">Todo Description </th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of todos">
+        <td>{{item.todo_title }}</td>
+        <td>{{item.todo_description }}</td>
+        <td>Edit or Delete </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
